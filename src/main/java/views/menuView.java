@@ -16,6 +16,7 @@ public class menuView extends javax.swing.JFrame {
     
     public menuView() {
         initComponents();
+        System.out.println("");
     }
 
     /**
