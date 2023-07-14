@@ -279,34 +279,34 @@ public class mainView extends javax.swing.JFrame {
         addOutputLayout.setHorizontalGroup(
             addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(addOutputLayout.createSequentialGroup()
-                .addGap(57, 57, 57)
+                .addGap(37, 37, 37)
                 .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(addOutputLayout.createSequentialGroup()
-                        .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(addOutputLayout.createSequentialGroup()
-                                .addGap(78, 78, 78)
-                                .addComponent(txtTitle1))
-                            .addComponent(jLabel6))
+                        .addComponent(jLabel6)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(addOutputLayout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(txtTitle1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addOutputLayout.createSequentialGroup()
-                        .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(addOutputLayout.createSequentialGroup()
-                                .addComponent(btnCancelOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnFinishOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(addOutputLayout.createSequentialGroup()
-                                .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel5))
-                                .addGap(33, 33, 33)
-                                .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(spinnerStockOutput)
-                                    .addComponent(inputCustomer)
-                                    .addComponent(selectMaterialOutput, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(descMaterialOutput))))
-                        .addGap(53, 53, 53))))
+                        .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5))
+                        .addGap(33, 33, 33)
+                        .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spinnerStockOutput)
+                            .addComponent(inputCustomer)
+                            .addComponent(selectMaterialOutput, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(descMaterialOutput))
+                        .addGap(53, 53, 53))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addOutputLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnCancelOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnFinishOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42))))
         );
         addOutputLayout.setVerticalGroup(
             addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -333,9 +333,9 @@ public class mainView extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(46, 46, 46)
                 .addGroup(addOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCancelOutput)
-                    .addComponent(btnFinishOutput))
-                .addContainerGap(108, Short.MAX_VALUE))
+                    .addComponent(btnCancelOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnFinishOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
 
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
@@ -1033,13 +1033,22 @@ public class mainView extends javax.swing.JFrame {
 
     private void initDataChoosers() {
         dateAddProduct = new JDateChooser();
-        dateAddProduct.setBounds(220, 255, 139, 30);
+        // MAC
+        // dateAddProduct.setBounds(220, 255, 139, 30);
+        // PC
+        dateAddProduct.setBounds(219, 237, 139, 23);
         
         dateEntry = new JDateChooser();
-        dateEntry.setBounds(252, 205, 139, 30);
+        // MAC
+        // dateEntry.setBounds(252, 205, 139, 30);
+        // PC
+        dateEntry.setBounds(233, 192, 149, 23);
         
         dateOutput = new JDateChooser();
-        dateOutput.setBounds(215, 215, 139, 30);
+        // MAC
+        // dateOutput.setBounds(215, 215, 139, 30);
+        // PC 
+        dateOutput.setBounds(182, 205, 167, 23);
     }
 
     private void addEntryConfig() {
